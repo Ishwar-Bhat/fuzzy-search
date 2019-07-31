@@ -1,3 +1,4 @@
 from django.contrib import admin
+from add_words.models import WordsList
 
-# Register your models here.
+admin.site.register(WordsList)

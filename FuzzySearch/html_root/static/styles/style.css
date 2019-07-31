@@ -1,0 +1,36 @@
+* {
+    font-family: verdana;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+.navbar .left, .navbar .right {
+    display: inline-block;
+}
+.navbar .left {
+    float: left;
+}
+.navbar .right {
+    float: right;
+}
+.navbar .header{
+    font-size: 20px;
+}
+.navbar:before, .navbar:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.content {
+    padding: 10px;
+}
+.content .inp-grp {
+    padding: 5px;
+}
+.content .inp-grp input[type="submit"] {
+    padding: 5px;
+}
