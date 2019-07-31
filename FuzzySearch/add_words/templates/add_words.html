@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Add words {% endblock %}
+
+{% block navcontent %}
+<div class="right">
+    <a href="#">Search words</a>
+</div>
+{% endblock %}
+
+{% block maincontent %}
+<div>
+    <h3 class="title">Add suggestion words</h3>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="inp-grp">
+            <label>Select the word file(.tsv): </label>
+            <input type="file" name="words" value="Add files"/>
+        </div>
+        <div class="inp-grp">
+            <input type="submit" value="Add Words">
+        </div>
+    </form>
+</div>
+{% endblock %}
