@@ -11,10 +11,10 @@
 {% block maincontent %}
 <h2>Search the words</h2>
 <p>Start typing:</p>
-<div class="inp-grp autocomplete">
-    <input id="myInput" type="text" name="myCountry" placeholder="Type here...">
+<div id="data-container" class="inp-grp autocomplete">
+    <input id="searchInput" type="text" name="search" placeholder="Type here...">
 </div>
 <script>
-    autocomplete(document.getElementById("myInput"), ["abcd", "ehgg"]);
+    initSearch();
 </script>
 {% endblock %}
