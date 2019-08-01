@@ -20,6 +20,9 @@ input[type=submit] {
   color: #fff;
   cursor: pointer;
 }
+p {
+    padding: 10px 0px;
+}
 /* Navbar */
 .navbar {
     background-color: black;
